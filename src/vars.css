@@ -1,0 +1,51 @@
+:root {
+  --color-text: #2C2C2C; /* Dark Gray for readability */
+  --color-subtext: #474646;
+  --color-bg: #F8F9FA; /* Light, soft background */
+  --color-primary: #4A90E2; /* Soft Blue */
+  --color-secondary: #77A6F7; /* Lighter Blue for contrast */
+  --color-accent: #0f0b0b; /* Warm accent color */
+  --card-shadow: rgba(0, 0, 0, 0.15);
+  --card-hover-shadow: rgb(33, 32, 32) ;
+  --card-bg: rgb(233, 232, 232);
+}
+
+[data-theme="dark"] {
+  --color-text: #F8F9FA;
+  --color-subtext: #d2d2d2;
+  --color-bg: #000000;
+  --color-primary: #77A6F7;
+  --color-secondary: #4A90E2;
+  --color-accent: #f6f6f6;
+  --card-shadow: rgba(0, 0, 0, 0.15) ;
+  --card-hover-shadow: rgb(255, 254, 254);
+  --card-bg: rgb(56, 56, 56);
+}
+/* Global Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Buttons */
+button {
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  
+}
+
+button:hover {
+  background: var(--color-secondary);
+}
+
+

@@ -1,0 +1,88 @@
+@import "@/vars.css";
+
+.container {
+  background: var(--color-bg);
+  padding: 60px 10%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 40px;
+}
+
+/* Contact Section Layout */
+.contactWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* Contact Items */
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--card-bg);
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px var(--card-shadow);
+  transition: transform 0.3s ease;
+}
+
+.contactItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px var(--card-hover-shadow);
+}
+
+/* Icons */
+.icon {
+  width: 28px;
+  height: 28px;
+}
+
+/* Contact Links */
+.contactItem a {
+  font-size: 18px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contactItem a:hover {
+  color: var(--color-primary);
+}
+
+/* Back to Top Button */
+.backToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: var(--color-primary);
+  color: white;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.backToTop:hover {
+  background: var(--color-secondary);
+  transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .contactWrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

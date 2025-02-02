@@ -1,0 +1,48 @@
+@import "@/vars.css";
+
+.container {
+  background: var(--color-bg);
+  padding: 60px 10%;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: 40px;
+}
+
+/* Achievement Cards */
+.achievementsWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.achievementCard {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px var(--card-shadow);
+  width: 320px;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.achievementCard:hover {
+  transform: translateY(-5px);
+  box-shadow:0px 15px 40px var(--card-hover-shadow);
+}
+
+.achievementCard h3 {
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+.achievementCard p {
+  font-size: 16px;
+  color: var(--color-text);
+}
