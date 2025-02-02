@@ -46,3 +46,22 @@
   font-size: 16px;
   color: var(--color-text);
 }
+/* Buttons */
+.projectLinks {
+  display: flex;
+  gap: 10px;
+}
+
+.sourceBtn {
+  background: var(--color-secondary);
+  color: rgb(223, 223, 238);
+  padding: 10px 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.demoBtn:hover, .sourceBtn:hover {
+  background: var(--color-secondary);
+}
