@@ -2,10 +2,8 @@
 
 /* Main Container */
 .container {
-  background: var(--color-bg);
   padding: 80px 10%;
   border-radius: 15px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 /* Titles */
