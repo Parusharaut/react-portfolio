@@ -19,7 +19,7 @@ export const Project = () => {
             </ul>
             <div className={styles.projectLinks}>
               <a 
-                href="https://docs.google.com/document/d/1vSjOmjmY57TDKqyYGCHloxjG352XZdey/edit?usp=sharing&ouid=102083095686986166133&rtpof=true&sd=true" 
+                href="https://drive.google.com/file/d/1QQNABTVHUtDemPbqFTT6C1Soa2HFXHHK/view?usp=sharing" 
                 className={styles.sourceBtn} 
                 target="_blank" 
                 rel="noopener noreferrer"
@@ -42,7 +42,7 @@ export const Project = () => {
             </ul>
             <div className={styles.projectLinks}>
               <a 
-                href="https://docs.google.com/document/d/1Hc7-2a6MG5PG7noBMh7kDtdslmdGGb7f2C8XfVkIGvI/edit?usp=sharing" 
+                href="https://drive.google.com/file/d/1g-okvBHkI87J99IcbuuUmCkOBl65ba9l/view?usp=sharing" 
                 className={styles.sourceBtn} 
                 target="_blank" 
                 rel="noopener noreferrer"
