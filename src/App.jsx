@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import styles from "./App.module.css"; // Import styles
-import Navbar from "./components/Navbar"; // Import Navbar
+import  styles  from "./App.module.css"; 
+import { Navbar } from "./Components/Navbar"; 
 import { Hero } from "./Components/Hero";
 import { About } from "./Components/About";
 import { Experience } from "./Components/Experience"; 
