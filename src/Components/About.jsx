@@ -1,6 +1,7 @@
 // About.jsx
 import React from "react";
 import styles from "./About.module.css";
+import { getImageUrl } from "../utils";
 
 export const About = () => {
   return (
@@ -8,7 +9,7 @@ export const About = () => {
       <div className={styles.wrapper}>
         {/* Image Section */}
         <div className={styles.imageContainer}>
-          <img src="/assets/meme1.png" alt="Profile" className={styles.profileImg} />
+          <img src={getImageUrl("meme1.png")} alt="Profile" className={styles.profileImg} />
         </div>
 
         {/* Text Section */}
