@@ -58,7 +58,7 @@ export const Experience = () => {
 
             {/* Experience 3 */}
             <div className={styles.experienceCard}>
-              <img src={getImageUrl("cleco.png")} alt="CLECO LLC" className={styles.companyLogo} />
+              <img src={getImageUrl("CLECO.png")} alt="CLECO LLC" className={styles.companyLogo} />
               <div className={styles.experienceContent}>
                 <h3>Intern – Network and Telecommunications</h3>
                 <p><em>CLECO LLC | May 2023 – August 2023</em></p>

@@ -8,7 +8,25 @@ export const Achievement = () => {
       <h2 className={styles.title}>Achievements</h2>
       <div className={styles.achievementsWrapper}>
 
-        {/* Competition 1 - TechXpo */}
+      {/* Competition 1 - Best Student Worker */}
+      <div className={styles.achievementCard}>
+          <h3>🏆Best Student Worker</h3>
+          <p>
+          Awarded Best Student Worker of the Year in the IT department for outstanding performance, technical expertise, and dedication to supporting IT operations 
+          </p>
+          <div className={styles.projectLinks}>
+          <a 
+              href={getImageUrl("work.jpg")} // Path to the image
+              className={styles.sourceBtn} 
+              target="_blank" 
+              rel="noopener noreferrer"
+             >
+              Source
+          </a>
+          </div>
+        </div>
+
+        {/* Competition 2 - TechXpo */}
         <div className={styles.achievementCard}>
           <h3>🏆 Best Overall Project - TechXpo</h3>
           <p>
@@ -26,7 +44,7 @@ export const Achievement = () => {
           </div>
         </div>
 
-        {/* Competition 2 - DT Cyber Games */}
+        {/* Competition 3 - DT Cyber Games */}
         <div className={styles.achievementCard}>
           <h3>🏆 4th Place - DT Cyber Games</h3>
           <p>
@@ -35,6 +53,22 @@ export const Achievement = () => {
           <div className={styles.projectLinks}>
           <a 
               href={getImageUrl("dt.jpg")} // Path to the image
+              className={styles.sourceBtn} 
+              target="_blank" 
+              rel="noopener noreferrer"
+             >
+              Source
+          </a>
+          </div>
+        </div>
+
+         {/* Certification 1 */}
+         <div className={styles.achievementCard}>
+          <h3>✅ COMPTIA Security+ </h3>
+          <p>Completed CompTIA Security+ Certification, gaining expertise in cybersecurity fundamentals, risk management, threat analysis, and network security.</p>
+          <div className={styles.projectLinks}>
+          <a 
+              href= "https://www.credly.com/badges/bd6eee33-007d-4a07-80c2-d829d41b9890/linked_in_profile"
               className={styles.sourceBtn} 
               target="_blank" 
               rel="noopener noreferrer"

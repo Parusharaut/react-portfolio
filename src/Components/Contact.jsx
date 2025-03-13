@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
+import { getImageUrl } from "../utils";
 
 export const Contact = () => {
   // Function to scroll back to the top
@@ -14,13 +15,13 @@ export const Contact = () => {
 
         {/* Email */}
         <div className={styles.contactItem}>
-          <img src="/assets/email.png" alt="Email" className={styles.icon} />
+          <img src={getImageUrl("email.png")} alt="Email" className={styles.icon} />
           <a href="mailto:autumnwhispers12@gmail.com">Email</a>
         </div>
 
         {/* LinkedIn */}
         <div className={styles.contactItem}>
-          <img src="/assets/linkedin.png" alt="LinkedIn" className={styles.icon} />
+          <img src={getImageUrl("linkedin.png")} alt="LinkedIn" className={styles.icon} />
           <a href="https://www.linkedin.com/in/parusha-raut-64620a252/" target="_blank" rel="noopener noreferrer">
             LinkedIn
           </a>
@@ -28,7 +29,7 @@ export const Contact = () => {
 
         {/* GitHub */}
         <div className={styles.contactItem}>
-          <img src="/assets/git.png" alt="GitHub" className={styles.icon} />
+          <img src={getImageUrl("git.png")} alt="GitHub" className={styles.icon} />
           <a href="https://github.com/Parusharaut" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
