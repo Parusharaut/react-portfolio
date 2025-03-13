@@ -6,16 +6,40 @@ export const Project = () => {
     <section className={styles.container} id="projects">
       <h2 className={styles.title}>Projects</h2>
       <div className={styles.projectsWrapper}>
-        
         {/* Project 1 */}
+        <div className={styles.projectCard}>
+          <div className={styles.projectContent}>
+            <h3>P40-UNDERDOG Project </h3>
+            <p><em>Paw-sitive | Spring 2025</em></p>
+            <ul>
+              <li>Enhanced security with session management and salting techniques and ensuring robust password protection</li>
+              <li>Utilized MongoDB for secure data storage, enforcing best practices to protect sensitive information, reducing vulnerabilities, and minimizing unauthorized access risks.</li>
+              <li>Applied security best practices at every stage of development, leveraging React for the frontend and Node.js with Express.js for the backend. Integrated bcrypt for password hashing, JWT (JSON Web Token) for authentication, and environment variables (.env) to safeguard sensitive configurations.</li>
+            </ul>
+            <div className={styles.projectLinks}>
+              <a 
+                href="https://p40-positive.vercel.app/" 
+                className={styles.sourceBtn} 
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Source
+              </a>
+            </div>
+          </div>
+        </div>
+        {/* Project 2 */}
         <div className={styles.projectCard}>
           <div className={styles.projectContent}>
             <h3>Role of AI in Cybersecurity</h3>
             <p><em>Research, AI, Cybersecurity | Spring 2024</em></p>
             <ul>
-              <li>Researched AI applications in improving cybersecurity strategies.</li>
-              <li>Proposed robust mitigation techniques to address AI-related challenges.</li>
-              <li>Enhanced the efficiency of Red and Blue team operations through AI solutions.</li>
+              <li>Conducted in-depth research on AI’s role in cybersecurity, analyzing its impact on red and blue team operations, automated
+              threat detection, and penetration testing</li>
+              <li>Developed theoretical mitigation strategies to counter AI-driven cyber threats, addressing adversarial AI, automated phishing,
+              and AI-powered malware risks</li>
+              <li>Explored the integration of AI in cybersecurity frameworks, evaluating AI-driven security tools, predictive analytics, and
+              ethical considerations in cyber defense</li>
             </ul>
             <div className={styles.projectLinks}>
               <a 
@@ -30,15 +54,16 @@ export const Project = () => {
           </div>
         </div>
         
-        {/* Project 2 */}
+        {/* Project 2*/}
         <div className={styles.projectCard}>
           <div className={styles.projectContent}>
             <h3>Wardriving Project</h3>
             <p><em>Kali Linux, Kismet, GPS, Wireshark, Google Earth | Fall 2023</em></p>
             <ul>
-              <li>Configured tools and hardware to scan and analyze 14,943 access points.</li>
-              <li>Assessed wireless security vulnerabilities and identified weak security measures.</li>
-              <li>Converted data into insights using Kismet, Google Earth, and MS Excel.</li>
+              <li>Scanned and analyzed 14,943 access points using advanced tools and hardware to assess network security across multiple
+              locations.</li>
+              <li>Identified key wireless security vulnerabilities, uncovering networks with weak protection and potential threats.</li>
+              <li>Transformed data into actionable insights using Kismet, Google Earth, and MS Excel, driving effective cybersecurity strategies.</li>
             </ul>
             <div className={styles.projectLinks}>
               <a 
@@ -53,7 +78,7 @@ export const Project = () => {
           </div>
         </div>
         
-        {/* Project 3 */}
+        {/* Project 4 */}
         <div className={styles.projectCard}>
           <div className={styles.projectContent}>
             <h3>Loss of Relict Oak Forests Along Coastal Louisiana</h3>

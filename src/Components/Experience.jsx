@@ -37,8 +37,10 @@ export const Experience = () => {
                 <h3>IT Technician</h3>
                 <p><em>University of Louisiana Monroe | May 2024 – Present</em></p>
                 <ul>
-                  <li>Troubleshoot and resolve technical issues related to computer systems, networks, and printers.</li>
-                  <li>Set up new computers using FOG imaging technology and assist with onboarding new employees.</li>
+                  <li>Specialized in Identity and Access Management (IAM), troubleshooting system, network, and printer issues, including account
+                  management and MFA support.</li>
+                  <li>Led student technicians, provided training, and managed employee onboarding with FOG imaging</li>
+                  <li>Supported software suites across multiple platforms and documented resolutions using OneNote and a ticketing system</li>
                 </ul>
               </div>
             </div>
@@ -50,8 +52,8 @@ export const Experience = () => {
                 <h3>IT Call Center</h3>
                 <p><em>University of Louisiana Monroe | April 2022 – May 2024</em></p>
                 <ul>
-                  <li>Built trust with customer accounts through effective communication.</li>
-                  <li>Provided accurate information and resolved technical issues efficiently.</li>
+                  <li>Built strong customer relationships through clear communication, trust, and responsive technical support.</li>
+                  <li>Efficiently diagnosed and resolved technical issues, ensuring accuracy, user satisfaction, and a seamless support experience.</li>
                 </ul>
               </div>
             </div>
@@ -63,8 +65,10 @@ export const Experience = () => {
                 <h3>Intern – Network and Telecommunications</h3>
                 <p><em>CLECO LLC | May 2023 – August 2023</em></p>
                 <ul>
-                  <li>Gained hands-on exposure to microwave technology and network infrastructure.</li>
-                  <li>Performed maintenance on SolarWinds Orion and updated network maps using Network Atlas.</li>
+                  <li>Gained hands-on experience with microwave technology and network infrastructure, enhancing technical knowledge in real-
+                  world applications.</li>
+                  <li>Performed comprehensive network security assessments, analyzing firewall rules and actively monitoring SolarWinds Orion to
+                  detect and mitigate potential threats.</li>
                 </ul>
               </div>
             </div>
