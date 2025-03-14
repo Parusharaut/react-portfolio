@@ -54,7 +54,7 @@
 
 .sourceBtn {
   background: var(--color-secondary);
-  color: rgb(223, 223, 238);
+  color: var(--color-text);
   padding: 10px 15px;
   border-radius: 8px;
   text-decoration: none;
