@@ -1,10 +1,9 @@
-/* Navbar.module.css */
-
 .navbar {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  position: relative;
 }
 
 .navContent {
@@ -13,20 +12,21 @@
   width: 100%;
 }
 
-.logo {
-  font-size: 30px;
-  font-weight: bold;
-  color: var(--color-primary);
-  text-decoration: none;
-  margin-right: 20px; /* Space between logo and menu */
+/* Ensures Portfolio and Theme Toggle are together */
+.logoAndToggle {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Keeps equal spacing between theme toggle and portfolio */
+  flex-grow: 1; /* Pushes menu options to the right */
 }
 
+/* Adds spacing between Portfolio and Menu */
 .menuItems {
   display: flex;
-  gap: 20px;
+  gap: 30px; /* Adjust this value for more space */
   list-style: none;
-  margin-left: 20px; /* Adjust spacing */
   font-size: 25px;
+  margin-left: auto; /* Pushes the menu to the right */
 }
 
 .menuItems li a {
@@ -40,6 +40,15 @@
   color: var(--color-accent);
 }
 
+/* Portfolio Text */
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* Theme Toggle Button */
 .themeToggle {
   background-color: var(--color-secondary);
   border: none;
@@ -49,32 +58,56 @@
   cursor: pointer;
   color: var(--color-text);
   transition: background-color 0.3s ease;
-  margin-left: auto; /* Pushes the button to the far right */
 }
 
 .themeToggle:hover {
   background-color: var(--color-accent);
 }
 
+/* Hamburger Menu (Visible in mobile) */
 .hamburger {
   display: none;
   font-size: 28px;
   cursor: pointer;
   color: var(--color-primary);
-  margin-left: 20px;
 }
 
+/* Responsive Navbar */
 @media screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
   }
 
+  /* Keep Theme Toggle on the Left */
+  .themeToggle {
+    order: -1; /* Moves toggle to the left */
+  }
+
+  /* Center Portfolio */
+  .logoContainer {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Move Hamburger Menu to the Right */
+  .hamburger {
+    display: block;
+    order: 1; /* Moves hamburger to the right */
+    margin-left: auto;
+  }
+
+  /* Mobile Menu */
   .menuItems {
     display: none;
     flex-direction: column;
     position: absolute;
     top: 70px;
-    left: 20px; /* Align with left */
+    right: 20px;
     background-color: var(--color-bg);
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -88,6 +121,5 @@
 
   .menuItems li a {
     padding: 10px 0;
-    text-align: left; /* Align links to the left */
   }
 }

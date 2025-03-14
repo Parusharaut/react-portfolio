@@ -1,4 +1,3 @@
-// Navbar.jsx
 import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 
@@ -23,13 +22,16 @@ export const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.navContent} style={{ justifyContent: "flex-start" }}>
-        <div className={styles.logo}>Portfolio</div>
-
-        <div className={styles.hamburger} onClick={toggleMenu}>
-          ☰
+      <div className={styles.navContent}>
+        {/* Portfolio + Theme Toggle */}
+        <div className={styles.logoAndToggle}>
+          <button className={styles.themeToggle} onClick={toggleTheme}>
+            {theme === "light" ? "🌙" : "☀️"}
+          </button>
+          <div className={styles.logo}>Portfolio</div>
         </div>
 
+        {/* Navigation Menu */}
         <ul className={`${styles.menuItems} ${isOpen ? styles.open : ""}`}>
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -37,10 +39,11 @@ export const Navbar = () => {
           <li><a href="#achievements">Achievements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+      </div>
 
-        <button className={styles.themeToggle} onClick={toggleTheme}>
-          {theme === "light" ? "🌙" : "☀️"}
-        </button>
+      {/* Hamburger Menu for Mobile */}
+      <div className={styles.hamburger} onClick={toggleMenu}>
+        ☰
       </div>
     </nav>
   );
