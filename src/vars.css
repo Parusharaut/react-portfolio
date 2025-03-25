@@ -1,25 +1,25 @@
 :root {
-  --color-text: #2C2C2C; /* Dark Gray for readability */
-  --color-subtext: #474646;
-  --color-bg: #F8F9FA; /* Light, soft background */
-  --color-primary: #4A90E2; /* Soft Blue */
-  --color-secondary: #77A6F7; /* Lighter Blue for contrast */
-  --color-accent: #0f0b0b; /* Warm accent color */
+  --color-text: #00668c; /* Dark Gray for readability */
+  --color-subtext: #313d44;
+  --color-bg: #fffefb; /* Light, soft background */
+  --color-primary: #1d1c1c; /* Soft Blue */
+  --color-secondary: #3f8fb8; /* Lighter Blue for contrast */
+  --color-accent:  #092a36; /* Warm accent color */
   --card-shadow: rgba(0, 0, 0, 0.15);
   --card-hover-shadow: rgb(33, 32, 32) ;
-  --card-bg: rgb(233, 232, 232);
+  --card-bg: #f5f4f1;
 }
 
 [data-theme="dark"] {
-  --color-text: #F8F9FA;
-  --color-subtext: #d2d2d2;
-  --color-bg: #000000;
-  --color-primary: #77A6F7;
-  --color-secondary: #4A90E2;
-  --color-accent: #f6f6f6;
-  --card-shadow: rgba(0, 0, 0, 0.15) ;
+  --color-text: #cee8ff;
+  --color-subtext: #e0e0e0;
+  --color-bg: #0F1C2E;
+  --color-primary: #FFFFFF;
+  --color-secondary: #acc2ef;
+  --color-accent: #1F3A5F;
+  --card-shadow: #0F1C2E ;
   --card-hover-shadow: rgb(255, 254, 254);
-  --card-bg: rgb(56, 56, 56);
+  --card-bg: #374357;
 }
 /* Global Styles */
 body {
