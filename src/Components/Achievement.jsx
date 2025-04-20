@@ -16,7 +16,7 @@ export const Achievement = () => {
           </p>
           <div className={styles.projectLinks}>
           <a 
-              href={getImageUrl("work.jpg")} // Path to the image
+              href={getImageUrl("award.jpg")} // Path to the image
               className={styles.sourceBtn} 
               target="_blank" 
               rel="noopener noreferrer"
